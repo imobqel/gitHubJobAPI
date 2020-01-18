@@ -1,0 +1,37 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/004-getPostionByCoordinates/008-getPositionsUsingLat&amp;Long-verifyFromService.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@getPositionsUsingLat&amp;Long </div>
+<div class="property">@smokeTest </div>
+</div>
+<div class="scenario">
+<h2>Scenario: 001-getPositionsUsingLat&amp;Long-verify from service when add param lat and long with valid value</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given Create a request for get Positions service</div>
+<div class="step">When set lat as param with &lt;latValue&gt; value</div>
+<div class="step">When set long as param with &lt;longValue&gt; value</div>
+<div class="step">And Execute the request</div>
+<div class="step">Then Verify from the Response status code is equal 200</div>
+<div class="step">And verify from the &lt;expectedLocation&gt; content Response body is existing</div>
+<table>
+<thead>
+<tr>
+<th>latValue</th><th>longValue</th><th>expectedLocation</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>40.7128</td><td>-74.0060</td><td>New York, NY</td></tr>
+<tr>
+<td>41.8781</td><td>-87.6298</td><td>Chicago</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {latValue=40.7128, longValue=-74.0060, expectedLocation=New York, NY, getPositionsUsingLat&amp;Long=, smokeTest=}</h3>
+<div class="step successful">Given Create a request for get Positions service</div>
+<div class="step successful">When set <span class="step parameter">lat</span> as param with <span class="step parameter">40.7128</span> value</div>
+<div class="step successful">When set <span class="step parameter">long</span> as param with <span class="step parameter">-74.0060</span> value</div>
+<div class="step successful">And Execute the request</div>
+<div class="step successful">Then Verify from the Response status code is equal <span class="step parameter">200</span></div>

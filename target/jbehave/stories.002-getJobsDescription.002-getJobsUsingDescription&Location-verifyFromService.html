@@ -1,0 +1,94 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/002-getJobsDescription/002-getJobsUsingDescription&amp;Location-verifyFromService.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@smokeTest </div>
+</div>
+<div class="scenario">
+<h2>Scenario: 001-getJobsUsingDescription&amp;Location-verify from service when add param description and location with valid value</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given Create a request for get Positions service</div>
+<div class="step">When set description as param with &lt;descriptionValue&gt; value</div>
+<div class="step">And set location as param with &lt;locationValue&gt; value</div>
+<div class="step">And Execute the request</div>
+<div class="step">Then Verify from the Response status code is equal 200</div>
+<div class="step">And Verify from the content Response body is not empty</div>
+<table>
+<thead>
+<tr>
+<th>descriptionValue</th><th>locationValue</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>java</td><td>Los Angeles</td></tr>
+<tr>
+<td>ruby</td><td>Los Angeles</td></tr>
+<tr>
+<td>java</td><td>new york</td></tr>
+<tr>
+<td>ruby</td><td>new york</td></tr>
+<tr>
+<td>Web Developer</td><td>new york</td></tr>
+<tr>
+<td>ruby</td><td>Chicago</td></tr>
+<tr>
+<td>java</td><td>Chicago</td></tr>
+<tr>
+<td></td><td></td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {descriptionValue=java, locationValue=Los Angeles, smokeTest=}</h3>
+<div class="step successful">Given Create a request for get Positions service</div>
+<div class="step successful">When set <span class="step parameter">description</span> as param with <span class="step parameter">java</span> value</div>
+<div class="step successful">And set <span class="step parameter">location</span> as param with <span class="step parameter">Los Angeles</span> value</div>
+<div class="step successful">And Execute the request</div>
+<div class="step successful">Then Verify from the Response status code is equal <span class="step parameter">200</span></div>
+<div class="step successful">And Verify from the content Response body is not empty</div>
+
+<h3 class="example">Example: {descriptionValue=ruby, locationValue=Los Angeles, smokeTest=}</h3>
+<div class="step successful">Given Create a request for get Positions service</div>
+<div class="step successful">When set <span class="step parameter">description</span> as param with <span class="step parameter">ruby</span> value</div>
+<div class="step successful">And set <span class="step parameter">location</span> as param with <span class="step parameter">Los Angeles</span> value</div>
+<div class="step successful">And Execute the request</div>
+<div class="step successful">Then Verify from the Response status code is equal <span class="step parameter">200</span></div>
+<div class="step successful">And Verify from the content Response body is not empty</div>
+
+<h3 class="example">Example: {descriptionValue=java, locationValue=new york, smokeTest=}</h3>
+<div class="step successful">Given Create a request for get Positions service</div>
+<div class="step successful">When set <span class="step parameter">description</span> as param with <span class="step parameter">java</span> value</div>
+<div class="step successful">And set <span class="step parameter">location</span> as param with <span class="step parameter">new york</span> value</div>
+<div class="step successful">And Execute the request</div>
+<div class="step successful">Then Verify from the Response status code is equal <span class="step parameter">200</span></div>
+<div class="step successful">And Verify from the content Response body is not empty</div>
+
+<h3 class="example">Example: {descriptionValue=ruby, locationValue=new york, smokeTest=}</h3>
+<div class="step successful">Given Create a request for get Positions service</div>
+<div class="step successful">When set <span class="step parameter">description</span> as param with <span class="step parameter">ruby</span> value</div>
+<div class="step successful">And set <span class="step parameter">location</span> as param with <span class="step parameter">new york</span> value</div>
+<div class="step successful">And Execute the request</div>
+<div class="step successful">Then Verify from the Response status code is equal <span class="step parameter">200</span></div>
+<div class="step successful">And Verify from the content Response body is not empty</div>
+
+<h3 class="example">Example: {descriptionValue=Web Developer, locationValue=new york, smokeTest=}</h3>
+<div class="step successful">Given Create a request for get Positions service</div>
+<div class="step successful">When set <span class="step parameter">description</span> as param with <span class="step parameter">Web Developer</span> value</div>
+<div class="step successful">And set <span class="step parameter">location</span> as param with <span class="step parameter">new york</span> value</div>
+<div class="step successful">And Execute the request</div>
+<div class="step successful">Then Verify from the Response status code is equal <span class="step parameter">200</span></div>
+<div class="step successful">And Verify from the content Response body is not empty</div>
+
+<h3 class="example">Example: {descriptionValue=ruby, locationValue=Chicago, smokeTest=}</h3>
+<div class="step successful">Given Create a request for get Positions service</div>
+<div class="step successful">When set <span class="step parameter">description</span> as param with <span class="step parameter">ruby</span> value</div>
+<div class="step successful">And set <span class="step parameter">location</span> as param with <span class="step parameter">Chicago</span> value</div>
+<div class="step successful">And Execute the request</div>
+<div class="step successful">Then Verify from the Response status code is equal <span class="step parameter">200</span></div>
+<div class="step failed">And Verify from the content Response body is not empty <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: expected [true] but found [false]</span></div>
+
+<h3 class="example">Example: {descriptionValue=java, locationValue=Chicago, smokeTest=}</h3>
+<div class="step successful">Given Create a request for get Positions service</div>
+<div class="step successful">When set <span class="step parameter">description</span> as param with <span class="step parameter">java</span> value</div>
+<div class="step successful">And set <span class="step parameter">location</span> as param with <span class="step parameter">Chicago</span> value</div>

@@ -1,0 +1,50 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/02-getJobsDescription/01-getJobsByDescription.story</div>
+<div class="scenario">
+<h2>Scenario: 01-getJobsbyDescription - verify from API when add param description with valid value</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given Initialize a request to get Jobs API</div>
+<div class="step">When set description as variable with &lt;descriptionValue&gt; value</div>
+<div class="step">And Lunch the API</div>
+<div class="step">Then Check the Response code is equal to 200</div>
+<div class="step">And Verify from the content Response body is not empty</div>
+<table>
+<thead>
+<tr>
+<th>descriptionValue</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>swift</td></tr>
+<tr>
+<td>android</td></tr>
+<tr>
+<td>java</td></tr>
+<tr>
+<td>java script</td></tr>
+<tr>
+<td>web developer</td></tr>
+<tr>
+<td>java script</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {descriptionValue=swift}</h3>
+<div class="step successful">Given Initialize a request to get Jobs API</div>
+<div class="step successful">When set <span class="step parameter">description</span> as variable with <span class="step parameter">swift</span> value</div>
+<div class="step successful">And Lunch the API</div>
+<div class="step successful">Then Check the Response code is equal to <span class="step parameter">200</span></div>
+<div class="step successful">And Verify from the content Response body is not empty</div>
+
+<h3 class="example">Example: {descriptionValue=android}</h3>
+<div class="step successful">Given Initialize a request to get Jobs API</div>
+<div class="step successful">When set <span class="step parameter">description</span> as variable with <span class="step parameter">android</span> value</div>
+<div class="step successful">And Lunch the API</div>
+<div class="step successful">Then Check the Response code is equal to <span class="step parameter">200</span></div>
+<div class="step successful">And Verify from the content Response body is not empty</div>
+
+<h3 class="example">Example: {descriptionValue=java}</h3>
+<div class="step successful">Given Initialize a request to get Jobs API</div>
+<div class="step successful">When set <span class="step parameter">description</span> as variable with <span class="step parameter">java</span> value</div>
